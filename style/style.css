@@ -1,0 +1,491 @@
+/* paleta decolores a usar
+#000000
+#FFEF82
+#BABD42
+#82954B
+*/
+
+/*INDEX*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #FCF8E8;
+    text-align: center;
+}
+
+.grillaIndex {
+    display: grid;
+    grid-template-areas:
+        "header  header  header"
+        "main    main    main"
+        "footer  footer  footer";
+    gap: 10px;
+    grid-template-columns: 3fr;
+    grid-template-rows:auto;
+}
+
+
+header {
+    grid-area: header;
+    padding: 20px;
+    background-color: #FCF8E8;
+    border-style: solid;
+    color: black;
+    margin: 10px;
+    margin-top: 25px;
+}
+
+main {
+    grid-area: main;
+}
+
+h1 {
+    background-color: #B09B71;
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+    border-color: solid;
+    color: black;
+}
+
+.barraNav {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+}
+
+li {
+    font: size 30px;
+    margin: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
+.subtitulo {
+    grid-area: subtitulo;
+    border: 30px solid;
+    color: black;
+    margin: 60px 0px 60px 0px;
+    text-align: center;
+    background-color: #B09B71;
+    padding: 80px;
+    font-size: 50px;
+    border-radius: 20px;
+}
+
+.imagen1Index {
+    grid-area: imagen1Index;
+    border: solid;
+    color: black;
+    background-color: #B09B71 ;
+}
+
+h3 {
+    grid-area: redesSociales;
+    font-family: 'anek latin', sans-serif;
+    border: none;
+    margin-right: 15px;
+    padding: 50px;
+    margin-left: 15px;
+    font-size: 30px;
+    color: black;
+    background-position: center;
+}
+
+footer {
+    grid-area: footer;
+    font-family: 'anek latin', sans-serif;
+    font-size: 30px;
+    color: black;
+    background-position: center;
+    font-family: 'anek latin', sans-serif;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (min-width:600px) {
+    .grillaIndex {
+        grid-template-areas:
+        "header    main"   
+        "header    main"
+        "header    main"      
+        "header    footer";
+        grid-template-columns: auto, 3fr;
+        grid-template-rows: 4fr;
+    }
+}
+
+
+
+@media (min-width:768px) {
+    .grillaIndex {
+        grid-template-areas:
+        "header  header  header"
+        "main    main    main"
+        "footer  footer  footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+@media (min-width:1024px) {
+    .grillaNosotros {
+        grid-template-areas:
+        "header  header  header"
+        "main    main    main"
+        "main    main    main"
+        "footer  footer  footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+/*CONTACTO*/
+
+.grillaContacto {
+    display: grid;
+    grid-template-areas:
+    "header    header"   
+    "main      main"
+    "main      main"      
+    "footer    footer";
+    gap: 10px;
+    grid-template-columns: 2fr, auto;
+    grid-template-rows:auto;
+}
+
+.formulario {
+    text-align: center;
+    padding: 100px 50px 100px 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    border-style: solid;
+    color: black;
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+}
+
+@media (min-width:600px) {
+    .grillaNosotros {
+        grid-template-areas:
+        "header    header"   
+        "main      main"
+        "main      main"      
+        "footer    footer";
+        grid-template-columns: 2fr,auto;
+        grid-template-rows: auto;
+    }
+}
+
+
+
+@media (min-width:768px) {
+    .grillaNosotros {
+        grid-template-areas:
+        "header  header  header"
+        "main    main    main"
+        "footer  footer  footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .grillaNosotros {
+        grid-template-areas:
+        "header  header  header"
+        "main    main    main"
+        "main    main    main"
+        "footer  footer  footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+/*NOSOTROS*/
+.grillaNosotros {
+    display: grid;
+    grid-template-areas:
+    "header    header"   
+    "main      main"
+    "main      main"      
+    "footer    footer";
+    gap: 10px;
+    grid-template-columns: 2fr, auto;
+    grid-template-rows:auto;
+} 
+
+.row {
+    align-items: center;
+    padding: 10px;
+}
+
+.col {
+    padding: 10px;
+}
+
+
+p {
+    color: black;
+    font-family: 'roboto', sans-serif;
+    padding: 30px;
+    margin-right: 15px;
+    margin-top: 55px;
+    margin-left: 15px;
+    font-size: 20px;
+    background-color: #B09B71;
+    border-radius: 20px;
+}
+
+@media (min-width:600px) {
+    .grillaContacto {
+        grid-template-areas:
+        "header    header"   
+        "main      main"
+        "main      main"      
+        "footer    footer";
+        grid-template-columns: 2fr,auto;
+        grid-template-rows: auto;
+    }
+}
+
+
+
+@media (min-width:768px) {
+    .grillaContacto {
+        grid-template-areas:
+        "header  header  header"
+        "main    main    main"
+        "footer  footer  footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .grillaContacto {
+        grid-template-areas:
+        "header  header  header"
+        "main    main    main"
+        "main    main    main"
+        "footer  footer  footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+/*PRODUCTOS*/
+
+.grillaProductos {
+    display: grid;
+    grid-template-areas:
+    "header    header"   
+    "main      main"
+    "main      main"      
+    "footer    footer";
+    gap: 10px;
+    grid-template-columns: 2fr, auto;
+    grid-template-rows:auto;
+} 
+
+.flex-container {
+    padding: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    font-family: 'anek latin', sans-serif;
+    font-size: x-large;
+    background-color: #B09B71;
+    transform: rotate(360deg);
+}
+
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.productoFooter{
+    grid-area: productoFooter;
+    margin-bottom: 0px;
+    font-family: 'anek latin', sans-serif;
+    font-size: 30px;
+    color: black;
+    background-position: center;
+    font-family: 'anek latin', sans-serif;
+    justify-content: space-around;
+} 
+
+.box{
+    border-radius: 30px;
+}
+
+@media (min-width:600px) {
+    .grillaContacto {
+        grid-template-areas:
+        "header    header"   
+        "main      main"
+        "main      main"      
+        "footer    footer";
+        grid-template-columns: 2fr,auto;
+        grid-template-rows: auto;
+    }
+}
+
+
+
+@media (min-width:768px) {
+    .grillaContacto {
+        grid-template-areas:
+        "header  header  header"
+        "main    main    main"
+        "footer  footer  footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .grillaContacto {
+        grid-template-areas:
+        "header  header  header"
+        "main    main    main"
+        "main    main    main"
+        "footer  footer  footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+/*GUIA DE TALLES*/  
+.grillaTablaDeTalles {
+    display: grid;
+    grid-template-areas:
+    "header    header"   
+    "main      main"
+    "main      main"      
+    "footer    footer";
+    gap: 10px;
+    grid-template-columns: 2fr, auto;
+    grid-template-rows:auto;
+} 
+
+iframe {
+    margin-right: 15px;
+    margin-left: 30px;
+    margin-top: 70px;
+    border-radius: 20px;
+    background-color: #B09B71;
+    border-radius: 20px;
+    border: 155px solid;
+    color: black;
+}
+
+
+.guiaDetalles {
+    background-color: #FCF8E8;
+    padding: 130px 100px 130px 100px
+}
+
+@media (min-width:600px) {
+    .grillaContacto {
+        grid-template-areas:
+        "header    header"   
+        "main      main"
+        "main      main"      
+        "footer    footer";
+        grid-template-columns: 2fr,auto;
+        grid-template-rows: auto;
+    }
+}
+
+
+
+@media (min-width:768px) {
+    .grillaContacto {
+        grid-template-areas:
+        "header  header  header"
+        "main    main    main"
+        "footer  footer  footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .grillaContacto {
+        grid-template-areas:
+        "header  header  header"
+        "main    main    main"
+        "main    main    main"
+        "footer  footer  footer";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
